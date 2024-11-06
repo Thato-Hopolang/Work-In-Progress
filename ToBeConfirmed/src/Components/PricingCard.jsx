@@ -10,7 +10,7 @@ const PricingCard = () => {
 function itemIncluded({ item }) {
     return (
       <div>
-        <h1>{item}</h1>
+        <img src="" alt="tick" /><h1>{item}</h1>
       </div>
     )
   
