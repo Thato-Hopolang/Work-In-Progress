@@ -2,7 +2,6 @@
 const Accordian = () => {
   return (
     <div>
-        <h1>Accordian</h1>
         <div className="accordian-container">
             <Accordianitem itemnumber="01" question="Question 1" answer="Answer 1" />
             <Accordianitem itemnumber="02" question="Question 2" answer="Answer 2" />
@@ -11,7 +10,7 @@ const Accordian = () => {
             <Accordianitem itemnumber="05" question="Question 5" answer="Answer 5" />
             <Accordianitem itemnumber="06" question="Question 6" answer="Answer 6" />
         </div>
-        <div className="section-top">
+        <div className="section-bottom">
             <p>Some content</p>
             <button>Talk to Us</button>
         </div>
