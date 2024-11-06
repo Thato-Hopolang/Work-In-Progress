@@ -11,6 +11,10 @@ const Accordian = () => {
             <Accordianitem itemnumber="05" question="Question 5" answer="Answer 5" />
             <Accordianitem itemnumber="06" question="Question 6" answer="Answer 6" />
         </div>
+        <div className="section-top">
+            <p>Some content</p>
+            <button>Talk to Us</button>
+        </div>
       </div>
   )
 }
