@@ -1,30 +1,21 @@
-import './App.css'
-import Navigation from './Components/Navigation/Navigation.jsx'
-import { Route, Routes } from 'react-router-dom'
-
-/* Pages */
-
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
+import Navbar from "./Components/Navigation/Navbar"
+import Contact from "./Pages/Contact"
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
-
-  console.log(window.location)
-
   return (
-    <div>
-      <Navigation/>
-      
-      <div className="routing">
+    <>
+      <Navbar />
+      <div className="container">
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
-
-    </div>
+    </>
   )
 }
 
