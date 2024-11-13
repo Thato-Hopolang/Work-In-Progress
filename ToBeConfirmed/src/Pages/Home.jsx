@@ -1,7 +1,9 @@
+import SectionalHeader from "../Components/SectionalHeader"
+
 const Home = () => {
   return (
     <div>
-        <h1>Home</h1>
+        <SectionalHeader/>
     </div>
   )
 }
