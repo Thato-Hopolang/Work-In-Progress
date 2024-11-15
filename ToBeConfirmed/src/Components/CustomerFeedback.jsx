@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import SectionalHeader from "./SectionalHeader"
 
 const CustomerFeedback = () => {
@@ -7,18 +8,18 @@ const CustomerFeedback = () => {
       header={"Client Feedback"}
       />
       <div className="customer-feedback-container">
-        <FeedbackText item={feedbackData[0]} />
-        <FeedbackText item={feedbackData[1]} />
-        <FeedbackAudio item={feedbackData[2]} />
-  
+        <FeedbackText item=""/>
+        <FeedbackText item=""/>
+        <FeedbackAudio item=""/>
+      </div>
     </div>
   )
 }
 
 export default CustomerFeedback
 
-function FeedbackText({}) {
-    returrn (
+function FeedbackText({item}) {
+    return (
         <div>
             <img src="" alt="customer-feedback" />
             <h2>{item.name}</h2>
@@ -27,11 +28,11 @@ function FeedbackText({}) {
     )
 }
 
-function FeedbackAudio({}) {
+function FeedbackAudio({src}) {
     return (
         <div>
             <audio controls>
-                <source src="" type="audio/ogg" />
+                <source src={src} type="audio" />
                 Your browser does not support the audio element.
             </audio>
         </div>
